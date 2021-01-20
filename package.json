@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify src/client/index.js -o src/client/bundle.js"
   },
   "author": "Dan Finlay <dan@danfinlay.com>",
   "license": "ISC",

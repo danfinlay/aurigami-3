@@ -18,13 +18,10 @@ function newConvo () {
     const audioCtx = new AudioContext();
     const source = audioCtx.createMediaStreamSource(stream);
 
+    debugger;
     // Passthrough
     source.connect(audioCtx.destination);
   });
-}
-
-function gotAudio(stream) {
-  peerConnection.addStream(stream.createWorkerProcessor(new Worker("effect.js")));
 }
 
 
